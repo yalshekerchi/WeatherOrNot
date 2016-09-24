@@ -1,3 +1,7 @@
+WeatherOrNot.SecondScreen, WeatherOrNot;md5857d2527f6aafbb5ec68cfac9246e95f.SecondScreen
+WeatherOrNot.SecondScreen, WeatherOrNot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5857d2527f6aafbb5ec68cfac9246e95f.SecondScreen
+WeatherOrNot.SecondScreen;md5857d2527f6aafbb5ec68cfac9246e95f.SecondScreen
+weatherornot.SecondScreen;md5857d2527f6aafbb5ec68cfac9246e95f.SecondScreen
 WeatherOrNot.Activity1, WeatherOrNot;md5857d2527f6aafbb5ec68cfac9246e95f.Activity1
 WeatherOrNot.Activity1, WeatherOrNot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5857d2527f6aafbb5ec68cfac9246e95f.Activity1
 WeatherOrNot.Activity1;md5857d2527f6aafbb5ec68cfac9246e95f.Activity1

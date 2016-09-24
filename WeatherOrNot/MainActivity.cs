@@ -56,10 +56,16 @@ namespace WeatherOrNot
             _locationText = FindViewById<TextView>(Resource.Id.location_text);
             FindViewById<TextView>(Resource.Id.get_address_button).Click += AddressButton_OnClick;
 
-            InitializeLocationManager();
-        }
+            Button button = FindViewById<Button>(Resource.Id.btnEnter);
+            button.Click += delegate
+            {
+                StartActivity(typeof(SecondScreen));
 
-        void InitializeLocationManager()
+                InitializeLocationManager();
+            };
+            }
+
+        public void InitializeLocationManager()
         {
             _locationManager = (LocationManager)GetSystemService(LocationService);
             Criteria criteriaForLocationService = new Criteria
@@ -82,14 +88,14 @@ namespace WeatherOrNot
         protected override void OnResume()
         {
             base.OnResume();
-            _locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
+            //_locationManager.RequestLocationUpdates(_locationProvider, 0, 0, this);
             Log.Debug(TAG, "Listening for location updates using " + _locationProvider + ".");
         }
 
         protected override void OnPause()
         {
             base.OnPause();
-            _locationManager.RemoveUpdates(this);
+            //_locationManager.RemoveUpdates(this);
             Log.Debug(TAG, "No longer listening for location updates.");
         }
 
@@ -132,5 +138,6 @@ namespace WeatherOrNot
                 _addressText.Text = "Unable to determine the address. Try again in a few minutes.";
             }
         }
+
     }
 }
