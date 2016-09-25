@@ -7,45 +7,52 @@
     android:paddingLeft="8dp"
     android:paddingRight="8dp">
     <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
+        android:src="@drawable/icon"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/imgLogo" />
     <TextView
         android:text="Current Location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="33dp"
+        android:textSize="25dp"
         android:id="@+id/txtCurrLoc" />
-    <TextView
-        android:text="Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="33dp"
-        android:id="@+id/txtLocField" />
-    <Button
+<!--<Button
         android:layout_width="fill_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_height="wrap_content"
         android:id="@+id/get_address_button"
-        android:text="Get Address" />
+        android:text="Get Address" />-->
     <TextView
         android:layout_width="fill_parent"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_height="wrap_content"
-        android:text="Location (when available)"
-        android:id="@+id/location_text"
-        android:layout_marginBottom="15dp" />
-    <TextView
-        android:layout_width="fill_parent"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_height="wrap_content"
         android:text="Address (when available)"
         android:id="@+id/address_text"
         android:layout_marginTop="10dp" />
-    <Button
-        android:text="Enter"
+    <TextView
+        android:text="Select Radius:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnEnter" />
+        android:textSize="25dp"
+        android:id="@+id/txtLocField" />
+    <NumberPicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kmPicker" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/btnNext"
+        android:text="Next"
+        android:layout_gravity="center_horizontal" />
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location (when available)"
+        android:id="@+id/location_text"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp" />-->
 </LinearLayout>

@@ -100,6 +100,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "WeatherOrNot.dll" comes first in this list. */
 		"WeatherOrNot.dll",
 		"Java.Interop.dll",
+		"Newtonsoft.Json.dll",
 		"System.Threading.dll",
 		"System.Runtime.dll",
 		"System.Collections.dll",
